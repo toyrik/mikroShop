@@ -17,8 +17,9 @@ class m230401_165559_create_products_table extends Migration
             'category_id' => $this->integer(),
             'title' => $this->string(),
             'color' => $this->string(),
-            'article' => $this->integer(),
+            'article' => $this->string(),
             'size' => $this->integer(),
+            'count' => $this->integer(),
         ]);
 
         $this->createIndex('category_id', 'categories', 'id');
